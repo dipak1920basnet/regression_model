@@ -1,5 +1,5 @@
 import model 
-from visualize_cost import Visualize_cost
+from visualize_cost import Visualize_cost, Dcountour_3
 
 
 X = [i for i in range(1,30,2)]
@@ -25,4 +25,7 @@ for i in range(len(w_list)):
         cost_list.append(cost_J(y,Pred=pred))
 
 Visualize_cost(cost_list, w_list, b_list)
+
+Dcountour_3(cost_list, w_list, b_list)
+
 print(cost_list)

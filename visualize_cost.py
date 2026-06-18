@@ -27,3 +27,25 @@ def Visualize_cost(Cost_list, W_list, b_list):
     ax.set_zlabel('Z')
 
     plt.show()
+
+
+
+# This block of code is generated with AI chat gpt guest mode
+def Dcountour_3(Cost_list, W_list, b_list):
+    fig = plt.figure()
+    ax = fig.add_subplot(projection='3d')
+
+    W_grid, B_grid = np.meshgrid(W_list, b_list)
+    Z = np.array(Cost_list).reshape(len(b_list), len(W_list))
+
+    ax.contour3D(W_grid, B_grid, Z, 50, cmap='viridis')
+
+    ax.set_xlim(0, 7)
+    ax.set_ylim(199, 401)
+    ax.set_zlim(0, 700)
+
+    ax.set_xlabel('W')
+    ax.set_ylabel('B')
+    ax.set_zlabel('Cost')
+
+    plt.show()
