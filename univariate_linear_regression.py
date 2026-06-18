@@ -9,5 +9,3 @@ b = 200
 
 
 linear_model = model.linear_model(X, w, b)
-
-print(linear_model)
