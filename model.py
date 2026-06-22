@@ -9,7 +9,7 @@ def regression(x,w,b):
     return x*w+b
 
 def linear_model(X,w,b):
-    # check if we received 1 example of multiple of them 
+    # check if we received 1 example or multiple of them 
     if type(X) == list:
         # preset the total values of target we are going to predict
         # and set a placeholder for the predictions
